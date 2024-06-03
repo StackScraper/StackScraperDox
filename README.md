@@ -1,0 +1,2 @@
+# StackScraperDox
+Documentation of StackScraper
