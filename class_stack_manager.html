@@ -1,0 +1,587 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>StackScraper: StackManager Class Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">StackScraper
+   &#160;<span id="projectnumber">v1.0.0</span>
+   </div>
+   <div id="projectbrief">app for convenient StackOverflow browse</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_stack_manager.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="class_stack_manager-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">StackManager Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_stack_manager_8hpp_source.html">StackManager.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:afc5702172a6953ea7101866bd9be5801" id="r_afc5702172a6953ea7101866bd9be5801"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc5702172a6953ea7101866bd9be5801">AskQuestion</a> (std::string &amp;question)</td></tr>
+<tr class="memdesc:afc5702172a6953ea7101866bd9be5801"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns answers  <br /></td></tr>
+<tr class="separator:afc5702172a6953ea7101866bd9be5801"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac32be3527f62d07b5a8211069b9b6094" id="r_ac32be3527f62d07b5a8211069b9b6094"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac32be3527f62d07b5a8211069b9b6094">SetQuestion</a> (std::string newInput)</td></tr>
+<tr class="memdesc:ac32be3527f62d07b5a8211069b9b6094"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets question  <br /></td></tr>
+<tr class="separator:ac32be3527f62d07b5a8211069b9b6094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88244d91a8c0805c78733a0cc3502474" id="r_a88244d91a8c0805c78733a0cc3502474"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88244d91a8c0805c78733a0cc3502474">SetQuestionByTags</a> (std::string newInput)</td></tr>
+<tr class="memdesc:a88244d91a8c0805c78733a0cc3502474"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets question with usage of tags  <br /></td></tr>
+<tr class="separator:a88244d91a8c0805c78733a0cc3502474"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad84c92c4c8f91f2c047bb529fa0b039e" id="r_ad84c92c4c8f91f2c047bb529fa0b039e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad84c92c4c8f91f2c047bb529fa0b039e">GetAnswer</a> (std::string res)</td></tr>
+<tr class="memdesc:ad84c92c4c8f91f2c047bb529fa0b039e"><td class="mdescLeft">&#160;</td><td class="mdescRight">gets answers  <br /></td></tr>
+<tr class="separator:ad84c92c4c8f91f2c047bb529fa0b039e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab37658c3295fc6c123529c65bdadad9a" id="r_ab37658c3295fc6c123529c65bdadad9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab37658c3295fc6c123529c65bdadad9a">ChangeJsonToString</a> (std::string &amp;)</td></tr>
+<tr class="memdesc:ab37658c3295fc6c123529c65bdadad9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">changes provided question/answer to string from json format  <br /></td></tr>
+<tr class="separator:ab37658c3295fc6c123529c65bdadad9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f042c7de3102425d649dffa5ba65ea2" id="r_a3f042c7de3102425d649dffa5ba65ea2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f042c7de3102425d649dffa5ba65ea2">SetQuestionId</a> (std::string)</td></tr>
+<tr class="memdesc:a3f042c7de3102425d649dffa5ba65ea2"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets question by provided id  <br /></td></tr>
+<tr class="separator:a3f042c7de3102425d649dffa5ba65ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac088940ac6752c5d4ec32295a30393e2" id="r_ac088940ac6752c5d4ec32295a30393e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac088940ac6752c5d4ec32295a30393e2">FillTabel</a> (std::string input)</td></tr>
+<tr class="memdesc:ac088940ac6752c5d4ec32295a30393e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">fill table of questions for list tags state  <br /></td></tr>
+<tr class="separator:ac088940ac6752c5d4ec32295a30393e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a419cc372fe6dced7b3bb9a955a81853e" id="r_a419cc372fe6dced7b3bb9a955a81853e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a419cc372fe6dced7b3bb9a955a81853e">RemoveHtmlTags</a> (std::string &amp;input)</td></tr>
+<tr class="memdesc:a419cc372fe6dced7b3bb9a955a81853e"><td class="mdescLeft">&#160;</td><td class="mdescRight">removes html code  <br /></td></tr>
+<tr class="separator:a419cc372fe6dced7b3bb9a955a81853e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dbb2964224518b6f79f0ed856fab399" id="r_a4dbb2964224518b6f79f0ed856fab399"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4dbb2964224518b6f79f0ed856fab399">ReturnNiceCode</a> (std::string &amp;input)</td></tr>
+<tr class="memdesc:a4dbb2964224518b6f79f0ed856fab399"><td class="mdescLeft">&#160;</td><td class="mdescRight">utilize tabs and space to code format  <br /></td></tr>
+<tr class="separator:a4dbb2964224518b6f79f0ed856fab399"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acddfe92d608ced8ac4b8ec6799d8db75" id="r_acddfe92d608ced8ac4b8ec6799d8db75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acddfe92d608ced8ac4b8ec6799d8db75">ChangingSpecialChar</a> (std::string &amp;input, std::string inChar, std::string outChar)</td></tr>
+<tr class="memdesc:acddfe92d608ced8ac4b8ec6799d8db75"><td class="mdescLeft">&#160;</td><td class="mdescRight">color special chars  <br /></td></tr>
+<tr class="separator:acddfe92d608ced8ac4b8ec6799d8db75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd9691258bb8ddeed13316dc6baf3bbc" id="r_afd9691258bb8ddeed13316dc6baf3bbc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd9691258bb8ddeed13316dc6baf3bbc">LookForByTags</a> (std::string &amp;input)</td></tr>
+<tr class="separator:afd9691258bb8ddeed13316dc6baf3bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6040aa6ae21dc1a42870b391ab3b8d87" id="r_a6040aa6ae21dc1a42870b391ab3b8d87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6040aa6ae21dc1a42870b391ab3b8d87">checkTagQuestionList</a> (std::string &amp;tagInput)</td></tr>
+<tr class="memdesc:a6040aa6ae21dc1a42870b391ab3b8d87"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks for list of questions based on tags  <br /></td></tr>
+<tr class="separator:a6040aa6ae21dc1a42870b391ab3b8d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89e94666f4986e85f9ab481a3aad9f65" id="r_a89e94666f4986e85f9ab481a3aad9f65"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89e94666f4986e85f9ab481a3aad9f65">GetTitle</a> ()</td></tr>
+<tr class="memdesc:a89e94666f4986e85f9ab481a3aad9f65"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns title of question  <br /></td></tr>
+<tr class="separator:a89e94666f4986e85f9ab481a3aad9f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5d328184bff405080b59309328fd17d" id="r_ae5d328184bff405080b59309328fd17d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5d328184bff405080b59309328fd17d">GetQuestionId</a> ()</td></tr>
+<tr class="memdesc:ae5d328184bff405080b59309328fd17d"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns id of question  <br /></td></tr>
+<tr class="separator:ae5d328184bff405080b59309328fd17d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a549817d081db61743e7be87491281230" id="r_a549817d081db61743e7be87491281230"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a549817d081db61743e7be87491281230">GetQuestionFromID</a> (std::string id)</td></tr>
+<tr class="memdesc:a549817d081db61743e7be87491281230"><td class="mdescLeft">&#160;</td><td class="mdescRight">gets quesiton from provided id  <br /></td></tr>
+<tr class="separator:a549817d081db61743e7be87491281230"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:af0289e9455a6d334709c03cae83e7272" id="r_af0289e9455a6d334709c03cae83e7272"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; <a class="el" href="class_tags_list.html">TagsList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0289e9455a6d334709c03cae83e7272">getQuestionList</a> ()</td></tr>
+<tr class="memdesc:af0289e9455a6d334709c03cae83e7272"><td class="mdescLeft">&#160;</td><td class="mdescRight">returnS vector of questions  <br /></td></tr>
+<tr class="separator:af0289e9455a6d334709c03cae83e7272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a59106af1efcbfe1f5c646dc9c5689dc5" id="r_a59106af1efcbfe1f5c646dc9c5689dc5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a59106af1efcbfe1f5c646dc9c5689dc5">bestAnswer</a> [3] = {&quot;&quot;,&quot;&quot;,&quot;&quot;}</td></tr>
+<tr class="separator:a59106af1efcbfe1f5c646dc9c5689dc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class utilizing stackoverflow api </p>
+
+<p class="definition">Definition at line <a class="el" href="_stack_manager_8hpp_source.html#l00017">17</a> of file <a class="el" href="_stack_manager_8hpp_source.html">StackManager.hpp</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="afc5702172a6953ea7101866bd9be5801" name="afc5702172a6953ea7101866bd9be5801"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc5702172a6953ea7101866bd9be5801">&#9670;&#160;</a></span>AskQuestion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StackManager::AskQuestion </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>question</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>returns answers </p>
+
+<p class="definition">Definition at line <a class="el" href="_stack_manager_8cpp_source.html#l00013">13</a> of file <a class="el" href="_stack_manager_8cpp_source.html">StackManager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab37658c3295fc6c123529c65bdadad9a" name="ab37658c3295fc6c123529c65bdadad9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab37658c3295fc6c123529c65bdadad9a">&#9670;&#160;</a></span>ChangeJsonToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StackManager::ChangeJsonToString </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>input</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>changes provided question/answer to string from json format </p>
+
+<p class="definition">Definition at line <a class="el" href="_stack_manager_8cpp_source.html#l00036">36</a> of file <a class="el" href="_stack_manager_8cpp_source.html">StackManager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acddfe92d608ced8ac4b8ec6799d8db75" name="acddfe92d608ced8ac4b8ec6799d8db75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acddfe92d608ced8ac4b8ec6799d8db75">&#9670;&#160;</a></span>ChangingSpecialChar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StackManager::ChangingSpecialChar </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>input</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>inChar</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>outChar</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>color special chars </p>
+
+<p class="definition">Definition at line <a class="el" href="_stack_manager_8cpp_source.html#l00096">96</a> of file <a class="el" href="_stack_manager_8cpp_source.html">StackManager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6040aa6ae21dc1a42870b391ab3b8d87" name="a6040aa6ae21dc1a42870b391ab3b8d87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6040aa6ae21dc1a42870b391ab3b8d87">&#9670;&#160;</a></span>checkTagQuestionList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StackManager::checkTagQuestionList </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>tagInput</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>checks for list of questions based on tags </p>
+
+<p class="definition">Definition at line <a class="el" href="_stack_manager_8cpp_source.html#l00114">114</a> of file <a class="el" href="_stack_manager_8cpp_source.html">StackManager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac088940ac6752c5d4ec32295a30393e2" name="ac088940ac6752c5d4ec32295a30393e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac088940ac6752c5d4ec32295a30393e2">&#9670;&#160;</a></span>FillTabel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StackManager::FillTabel </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>input</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>fill table of questions for list tags state </p>
+
+<p class="definition">Definition at line <a class="el" href="_stack_manager_8cpp_source.html#l00072">72</a> of file <a class="el" href="_stack_manager_8cpp_source.html">StackManager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad84c92c4c8f91f2c047bb529fa0b039e" name="ad84c92c4c8f91f2c047bb529fa0b039e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad84c92c4c8f91f2c047bb529fa0b039e">&#9670;&#160;</a></span>GetAnswer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StackManager::GetAnswer </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>res</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>gets answers </p>
+
+<p class="definition">Definition at line <a class="el" href="_stack_manager_8cpp_source.html#l00028">28</a> of file <a class="el" href="_stack_manager_8cpp_source.html">StackManager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a549817d081db61743e7be87491281230" name="a549817d081db61743e7be87491281230"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a549817d081db61743e7be87491281230">&#9670;&#160;</a></span>GetQuestionFromID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StackManager::GetQuestionFromID </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>gets quesiton from provided id </p>
+
+<p class="definition">Definition at line <a class="el" href="_stack_manager_8cpp_source.html#l00153">153</a> of file <a class="el" href="_stack_manager_8cpp_source.html">StackManager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae5d328184bff405080b59309328fd17d" name="ae5d328184bff405080b59309328fd17d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5d328184bff405080b59309328fd17d">&#9670;&#160;</a></span>GetQuestionId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string StackManager::GetQuestionId </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>returns id of question </p>
+
+<p class="definition">Definition at line <a class="el" href="_stack_manager_8cpp_source.html#l00148">148</a> of file <a class="el" href="_stack_manager_8cpp_source.html">StackManager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af0289e9455a6d334709c03cae83e7272" name="af0289e9455a6d334709c03cae83e7272"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0289e9455a6d334709c03cae83e7272">&#9670;&#160;</a></span>getQuestionList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="class_tags_list.html">TagsList</a> &gt; StackManager::getQuestionList </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>returnS vector of questions </p>
+
+<p class="definition">Definition at line <a class="el" href="_stack_manager_8cpp_source.html#l00140">140</a> of file <a class="el" href="_stack_manager_8cpp_source.html">StackManager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a89e94666f4986e85f9ab481a3aad9f65" name="a89e94666f4986e85f9ab481a3aad9f65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89e94666f4986e85f9ab481a3aad9f65">&#9670;&#160;</a></span>GetTitle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string StackManager::GetTitle </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>returns title of question </p>
+
+<p class="definition">Definition at line <a class="el" href="_stack_manager_8cpp_source.html#l00144">144</a> of file <a class="el" href="_stack_manager_8cpp_source.html">StackManager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="afd9691258bb8ddeed13316dc6baf3bbc" name="afd9691258bb8ddeed13316dc6baf3bbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd9691258bb8ddeed13316dc6baf3bbc">&#9670;&#160;</a></span>LookForByTags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StackManager::LookForByTags </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>input</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_stack_manager_8cpp_source.html#l00110">110</a> of file <a class="el" href="_stack_manager_8cpp_source.html">StackManager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a419cc372fe6dced7b3bb9a955a81853e" name="a419cc372fe6dced7b3bb9a955a81853e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a419cc372fe6dced7b3bb9a955a81853e">&#9670;&#160;</a></span>RemoveHtmlTags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StackManager::RemoveHtmlTags </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>input</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>removes html code </p>
+
+<p class="definition">Definition at line <a class="el" href="_stack_manager_8cpp_source.html#l00092">92</a> of file <a class="el" href="_stack_manager_8cpp_source.html">StackManager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4dbb2964224518b6f79f0ed856fab399" name="a4dbb2964224518b6f79f0ed856fab399"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dbb2964224518b6f79f0ed856fab399">&#9670;&#160;</a></span>ReturnNiceCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StackManager::ReturnNiceCode </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>input</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>utilize tabs and space to code format </p>
+
+<p class="definition">Definition at line <a class="el" href="_stack_manager_8cpp_source.html#l00103">103</a> of file <a class="el" href="_stack_manager_8cpp_source.html">StackManager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac32be3527f62d07b5a8211069b9b6094" name="ac32be3527f62d07b5a8211069b9b6094"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac32be3527f62d07b5a8211069b9b6094">&#9670;&#160;</a></span>SetQuestion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StackManager::SetQuestion </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>newInput</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>sets question </p>
+
+<p class="definition">Definition at line <a class="el" href="_stack_manager_8cpp_source.html#l00018">18</a> of file <a class="el" href="_stack_manager_8cpp_source.html">StackManager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a88244d91a8c0805c78733a0cc3502474" name="a88244d91a8c0805c78733a0cc3502474"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88244d91a8c0805c78733a0cc3502474">&#9670;&#160;</a></span>SetQuestionByTags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StackManager::SetQuestionByTags </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>newInput</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>sets question with usage of tags </p>
+
+<p class="definition">Definition at line <a class="el" href="_stack_manager_8cpp_source.html#l00022">22</a> of file <a class="el" href="_stack_manager_8cpp_source.html">StackManager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3f042c7de3102425d649dffa5ba65ea2" name="a3f042c7de3102425d649dffa5ba65ea2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f042c7de3102425d649dffa5ba65ea2">&#9670;&#160;</a></span>SetQuestionId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StackManager::SetQuestionId </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>input</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>sets question by provided id </p>
+
+<p class="definition">Definition at line <a class="el" href="_stack_manager_8cpp_source.html#l00053">53</a> of file <a class="el" href="_stack_manager_8cpp_source.html">StackManager.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a59106af1efcbfe1f5c646dc9c5689dc5" name="a59106af1efcbfe1f5c646dc9c5689dc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59106af1efcbfe1f5c646dc9c5689dc5">&#9670;&#160;</a></span>bestAnswer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string StackManager::bestAnswer[3] = {&quot;&quot;,&quot;&quot;,&quot;&quot;}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_stack_manager_8hpp_source.html#l00041">41</a> of file <a class="el" href="_stack_manager_8hpp_source.html">StackManager.hpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>Logic/StackApi/<a class="el" href="_stack_manager_8hpp_source.html">StackManager.hpp</a></li>
+<li>Logic/StackApi/<a class="el" href="_stack_manager_8cpp_source.html">StackManager.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_stack_manager.html">StackManager</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,645 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>StackScraper: DBmanager Class Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">StackScraper
+   &#160;<span id="projectnumber">v1.0.0</span>
+   </div>
+   <div id="projectbrief">app for convenient StackOverflow browse</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_d_bmanager.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="class_d_bmanager-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">DBmanager Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_d_bmanager_8hpp_source.html">DBmanager.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:adf66368d251ee31043db19ca732d4bd0" id="r_adf66368d251ee31043db19ca732d4bd0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf66368d251ee31043db19ca732d4bd0">insertUser</a> (std::string &amp;nickname, std::string &amp;password)</td></tr>
+<tr class="separator:adf66368d251ee31043db19ca732d4bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00d9dc92db3681b38621db29b271fbed" id="r_a00d9dc92db3681b38621db29b271fbed"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00d9dc92db3681b38621db29b271fbed">getUsers</a> ()</td></tr>
+<tr class="separator:a00d9dc92db3681b38621db29b271fbed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d5d4a5ece61d2e6a107ef9d76c22ccf" id="r_a5d5d4a5ece61d2e6a107ef9d76c22ccf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d5d4a5ece61d2e6a107ef9d76c22ccf">updateUserPassword</a> (int id, std::string &amp;password)</td></tr>
+<tr class="separator:a5d5d4a5ece61d2e6a107ef9d76c22ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad039796a7a67fdd3ee6835c90299781a" id="r_ad039796a7a67fdd3ee6835c90299781a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad039796a7a67fdd3ee6835c90299781a">deleteUser</a> (int id)</td></tr>
+<tr class="separator:ad039796a7a67fdd3ee6835c90299781a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1eb2ec9bddb9b11baf8eb834dc523af" id="r_ab1eb2ec9bddb9b11baf8eb834dc523af"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1eb2ec9bddb9b11baf8eb834dc523af">loginUser</a> (std::string &amp;log, std::string &amp;pass)</td></tr>
+<tr class="separator:ab1eb2ec9bddb9b11baf8eb834dc523af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e9a4cf35e82c6dab2b1d0e04734e845" id="r_a1e9a4cf35e82c6dab2b1d0e04734e845"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e9a4cf35e82c6dab2b1d0e04734e845">insertAdmin</a> (int Id)</td></tr>
+<tr class="separator:a1e9a4cf35e82c6dab2b1d0e04734e845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1768f8d141f2541bea62198331f1590" id="r_ad1768f8d141f2541bea62198331f1590"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1768f8d141f2541bea62198331f1590">getAdmins</a> ()</td></tr>
+<tr class="separator:ad1768f8d141f2541bea62198331f1590"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11aec7a61067b96287c50135d6930ce1" id="r_a11aec7a61067b96287c50135d6930ce1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11aec7a61067b96287c50135d6930ce1">deleteAdmin</a> (int adminId)</td></tr>
+<tr class="separator:a11aec7a61067b96287c50135d6930ce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a686816e4fe476808daee879f3adb6a1c" id="r_a686816e4fe476808daee879f3adb6a1c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a686816e4fe476808daee879f3adb6a1c">insertPhrase</a> (std::string &amp;body, std::string &amp;response)</td></tr>
+<tr class="separator:a686816e4fe476808daee879f3adb6a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad493c3f0d513549e18d23847fa1cd039" id="r_ad493c3f0d513549e18d23847fa1cd039"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad493c3f0d513549e18d23847fa1cd039">getPhrases</a> ()</td></tr>
+<tr class="separator:ad493c3f0d513549e18d23847fa1cd039"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f65a55f8e8f7056a2dc4e6baa13cb05" id="r_a6f65a55f8e8f7056a2dc4e6baa13cb05"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f65a55f8e8f7056a2dc4e6baa13cb05">getPhrase</a> (int phraseId)</td></tr>
+<tr class="separator:a6f65a55f8e8f7056a2dc4e6baa13cb05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a281c2d7c4d678be36ec9e638f2363a1a" id="r_a281c2d7c4d678be36ec9e638f2363a1a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a281c2d7c4d678be36ec9e638f2363a1a">deletePhrase</a> (int id)</td></tr>
+<tr class="separator:a281c2d7c4d678be36ec9e638f2363a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ebf9e50935dae88cd5bf284ceeb5345" id="r_a8ebf9e50935dae88cd5bf284ceeb5345"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ebf9e50935dae88cd5bf284ceeb5345">insertTag</a> (std::string &amp;body)</td></tr>
+<tr class="separator:a8ebf9e50935dae88cd5bf284ceeb5345"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95689d44e1147003e07e1c727076e0a5" id="r_a95689d44e1147003e07e1c727076e0a5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95689d44e1147003e07e1c727076e0a5">getTags</a> ()</td></tr>
+<tr class="separator:a95689d44e1147003e07e1c727076e0a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a993c88970ffed5eff518ff2a10a0c87c" id="r_a993c88970ffed5eff518ff2a10a0c87c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a993c88970ffed5eff518ff2a10a0c87c">deleteTag</a> (int id)</td></tr>
+<tr class="separator:a993c88970ffed5eff518ff2a10a0c87c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee4981f5c8dc6e0231e2bbe2e72138b0" id="r_aee4981f5c8dc6e0231e2bbe2e72138b0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee4981f5c8dc6e0231e2bbe2e72138b0">insertFavourite</a> (int phraseId)</td></tr>
+<tr class="separator:aee4981f5c8dc6e0231e2bbe2e72138b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac70b87c728a277ef07df854787a7afc6" id="r_ac70b87c728a277ef07df854787a7afc6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac70b87c728a277ef07df854787a7afc6">getFavourites</a> ()</td></tr>
+<tr class="separator:ac70b87c728a277ef07df854787a7afc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cbe27197f44ddaaa5b59c55373ac3ff" id="r_a6cbe27197f44ddaaa5b59c55373ac3ff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6cbe27197f44ddaaa5b59c55373ac3ff">deleteFavourite</a> (int favId)</td></tr>
+<tr class="separator:a6cbe27197f44ddaaa5b59c55373ac3ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0817236000eebc4acbb5a63e0b0f807" id="r_aa0817236000eebc4acbb5a63e0b0f807"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0817236000eebc4acbb5a63e0b0f807">connectTagToPhrase</a> (int phraseId, int tagId)</td></tr>
+<tr class="separator:aa0817236000eebc4acbb5a63e0b0f807"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14e638db3a697e8ab550e35a8570b3af" id="r_a14e638db3a697e8ab550e35a8570b3af"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a14e638db3a697e8ab550e35a8570b3af">getPhraseWithTag</a> ()</td></tr>
+<tr class="separator:a14e638db3a697e8ab550e35a8570b3af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8b53cf3e9618e1426a7d72a84d59872" id="r_ab8b53cf3e9618e1426a7d72a84d59872"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8b53cf3e9618e1426a7d72a84d59872">DBmanager</a> ()</td></tr>
+<tr class="separator:ab8b53cf3e9618e1426a7d72a84d59872"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44433a4eda98144e5086263be829910f" id="r_a44433a4eda98144e5086263be829910f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44433a4eda98144e5086263be829910f">~DBmanager</a> ()</td></tr>
+<tr class="separator:a44433a4eda98144e5086263be829910f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Controls usage of database in the application Most of the functions are self-explanatory </p>
+
+<p class="definition">Definition at line <a class="el" href="_d_bmanager_8hpp_source.html#l00017">17</a> of file <a class="el" href="_d_bmanager_8hpp_source.html">DBmanager.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ab8b53cf3e9618e1426a7d72a84d59872" name="ab8b53cf3e9618e1426a7d72a84d59872"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8b53cf3e9618e1426a7d72a84d59872">&#9670;&#160;</a></span>DBmanager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DBmanager::DBmanager </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_d_bmanager_8cpp_source.html#l00409">409</a> of file <a class="el" href="_d_bmanager_8cpp_source.html">DBmanager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a44433a4eda98144e5086263be829910f" name="a44433a4eda98144e5086263be829910f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44433a4eda98144e5086263be829910f">&#9670;&#160;</a></span>~DBmanager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DBmanager::~DBmanager </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_d_bmanager_8cpp_source.html#l00421">421</a> of file <a class="el" href="_d_bmanager_8cpp_source.html">DBmanager.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa0817236000eebc4acbb5a63e0b0f807" name="aa0817236000eebc4acbb5a63e0b0f807"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0817236000eebc4acbb5a63e0b0f807">&#9670;&#160;</a></span>connectTagToPhrase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DBmanager::connectTagToPhrase </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>phraseId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tagId</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_d_bmanager_8cpp_source.html#l00364">364</a> of file <a class="el" href="_d_bmanager_8cpp_source.html">DBmanager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a11aec7a61067b96287c50135d6930ce1" name="a11aec7a61067b96287c50135d6930ce1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11aec7a61067b96287c50135d6930ce1">&#9670;&#160;</a></span>deleteAdmin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DBmanager::deleteAdmin </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>adminId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_d_bmanager_8cpp_source.html#l00220">220</a> of file <a class="el" href="_d_bmanager_8cpp_source.html">DBmanager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6cbe27197f44ddaaa5b59c55373ac3ff" name="a6cbe27197f44ddaaa5b59c55373ac3ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cbe27197f44ddaaa5b59c55373ac3ff">&#9670;&#160;</a></span>deleteFavourite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DBmanager::deleteFavourite </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>favId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_d_bmanager_8cpp_source.html#l00348">348</a> of file <a class="el" href="_d_bmanager_8cpp_source.html">DBmanager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a281c2d7c4d678be36ec9e638f2363a1a" name="a281c2d7c4d678be36ec9e638f2363a1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a281c2d7c4d678be36ec9e638f2363a1a">&#9670;&#160;</a></span>deletePhrase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DBmanager::deletePhrase </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_d_bmanager_8cpp_source.html#l00273">273</a> of file <a class="el" href="_d_bmanager_8cpp_source.html">DBmanager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a993c88970ffed5eff518ff2a10a0c87c" name="a993c88970ffed5eff518ff2a10a0c87c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a993c88970ffed5eff518ff2a10a0c87c">&#9670;&#160;</a></span>deleteTag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DBmanager::deleteTag </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_d_bmanager_8cpp_source.html#l00310">310</a> of file <a class="el" href="_d_bmanager_8cpp_source.html">DBmanager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad039796a7a67fdd3ee6835c90299781a" name="ad039796a7a67fdd3ee6835c90299781a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad039796a7a67fdd3ee6835c90299781a">&#9670;&#160;</a></span>deleteUser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DBmanager::deleteUser </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_d_bmanager_8cpp_source.html#l00180">180</a> of file <a class="el" href="_d_bmanager_8cpp_source.html">DBmanager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad1768f8d141f2541bea62198331f1590" name="ad1768f8d141f2541bea62198331f1590"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1768f8d141f2541bea62198331f1590">&#9670;&#160;</a></span>getAdmins()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt; DBmanager::getAdmins </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_d_bmanager_8cpp_source.html#l00207">207</a> of file <a class="el" href="_d_bmanager_8cpp_source.html">DBmanager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac70b87c728a277ef07df854787a7afc6" name="ac70b87c728a277ef07df854787a7afc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac70b87c728a277ef07df854787a7afc6">&#9670;&#160;</a></span>getFavourites()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt; DBmanager::getFavourites </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_d_bmanager_8cpp_source.html#l00335">335</a> of file <a class="el" href="_d_bmanager_8cpp_source.html">DBmanager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6f65a55f8e8f7056a2dc4e6baa13cb05" name="a6f65a55f8e8f7056a2dc4e6baa13cb05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f65a55f8e8f7056a2dc4e6baa13cb05">&#9670;&#160;</a></span>getPhrase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt; DBmanager::getPhrase </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>phraseId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_d_bmanager_8cpp_source.html#l00260">260</a> of file <a class="el" href="_d_bmanager_8cpp_source.html">DBmanager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad493c3f0d513549e18d23847fa1cd039" name="ad493c3f0d513549e18d23847fa1cd039"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad493c3f0d513549e18d23847fa1cd039">&#9670;&#160;</a></span>getPhrases()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt; DBmanager::getPhrases </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_d_bmanager_8cpp_source.html#l00247">247</a> of file <a class="el" href="_d_bmanager_8cpp_source.html">DBmanager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a14e638db3a697e8ab550e35a8570b3af" name="a14e638db3a697e8ab550e35a8570b3af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14e638db3a697e8ab550e35a8570b3af">&#9670;&#160;</a></span>getPhraseWithTag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt; DBmanager::getPhraseWithTag </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_d_bmanager_8cpp_source.html#l00376">376</a> of file <a class="el" href="_d_bmanager_8cpp_source.html">DBmanager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a95689d44e1147003e07e1c727076e0a5" name="a95689d44e1147003e07e1c727076e0a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95689d44e1147003e07e1c727076e0a5">&#9670;&#160;</a></span>getTags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt; DBmanager::getTags </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_d_bmanager_8cpp_source.html#l00297">297</a> of file <a class="el" href="_d_bmanager_8cpp_source.html">DBmanager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a00d9dc92db3681b38621db29b271fbed" name="a00d9dc92db3681b38621db29b271fbed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00d9dc92db3681b38621db29b271fbed">&#9670;&#160;</a></span>getUsers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt; DBmanager::getUsers </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_d_bmanager_8cpp_source.html#l00151">151</a> of file <a class="el" href="_d_bmanager_8cpp_source.html">DBmanager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1e9a4cf35e82c6dab2b1d0e04734e845" name="a1e9a4cf35e82c6dab2b1d0e04734e845"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e9a4cf35e82c6dab2b1d0e04734e845">&#9670;&#160;</a></span>insertAdmin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DBmanager::insertAdmin </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>Id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_d_bmanager_8cpp_source.html#l00193">193</a> of file <a class="el" href="_d_bmanager_8cpp_source.html">DBmanager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aee4981f5c8dc6e0231e2bbe2e72138b0" name="aee4981f5c8dc6e0231e2bbe2e72138b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee4981f5c8dc6e0231e2bbe2e72138b0">&#9670;&#160;</a></span>insertFavourite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DBmanager::insertFavourite </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>phraseId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_d_bmanager_8cpp_source.html#l00322">322</a> of file <a class="el" href="_d_bmanager_8cpp_source.html">DBmanager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a686816e4fe476808daee879f3adb6a1c" name="a686816e4fe476808daee879f3adb6a1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a686816e4fe476808daee879f3adb6a1c">&#9670;&#160;</a></span>insertPhrase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DBmanager::insertPhrase </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>body</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>response</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_d_bmanager_8cpp_source.html#l00232">232</a> of file <a class="el" href="_d_bmanager_8cpp_source.html">DBmanager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8ebf9e50935dae88cd5bf284ceeb5345" name="a8ebf9e50935dae88cd5bf284ceeb5345"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ebf9e50935dae88cd5bf284ceeb5345">&#9670;&#160;</a></span>insertTag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DBmanager::insertTag </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>body</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_d_bmanager_8cpp_source.html#l00285">285</a> of file <a class="el" href="_d_bmanager_8cpp_source.html">DBmanager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adf66368d251ee31043db19ca732d4bd0" name="adf66368d251ee31043db19ca732d4bd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf66368d251ee31043db19ca732d4bd0">&#9670;&#160;</a></span>insertUser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DBmanager::insertUser </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>nickname</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>password</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_d_bmanager_8cpp_source.html#l00138">138</a> of file <a class="el" href="_d_bmanager_8cpp_source.html">DBmanager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab1eb2ec9bddb9b11baf8eb834dc523af" name="ab1eb2ec9bddb9b11baf8eb834dc523af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1eb2ec9bddb9b11baf8eb834dc523af">&#9670;&#160;</a></span>loginUser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DBmanager::loginUser </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>log</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>pass</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_d_bmanager_8cpp_source.html#l00389">389</a> of file <a class="el" href="_d_bmanager_8cpp_source.html">DBmanager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5d5d4a5ece61d2e6a107ef9d76c22ccf" name="a5d5d4a5ece61d2e6a107ef9d76c22ccf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d5d4a5ece61d2e6a107ef9d76c22ccf">&#9670;&#160;</a></span>updateUserPassword()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DBmanager::updateUserPassword </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>password</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_d_bmanager_8cpp_source.html#l00165">165</a> of file <a class="el" href="_d_bmanager_8cpp_source.html">DBmanager.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>Logic/Database/<a class="el" href="_d_bmanager_8hpp_source.html">DBmanager.hpp</a></li>
+<li>Logic/Database/<a class="el" href="_d_bmanager_8cpp_source.html">DBmanager.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_d_bmanager.html">DBmanager</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

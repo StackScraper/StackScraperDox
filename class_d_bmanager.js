@@ -1,0 +1,25 @@
+var class_d_bmanager =
+[
+    [ "DBmanager", "class_d_bmanager.html#ab8b53cf3e9618e1426a7d72a84d59872", null ],
+    [ "~DBmanager", "class_d_bmanager.html#a44433a4eda98144e5086263be829910f", null ],
+    [ "connectTagToPhrase", "class_d_bmanager.html#aa0817236000eebc4acbb5a63e0b0f807", null ],
+    [ "deleteAdmin", "class_d_bmanager.html#a11aec7a61067b96287c50135d6930ce1", null ],
+    [ "deleteFavourite", "class_d_bmanager.html#a6cbe27197f44ddaaa5b59c55373ac3ff", null ],
+    [ "deletePhrase", "class_d_bmanager.html#a281c2d7c4d678be36ec9e638f2363a1a", null ],
+    [ "deleteTag", "class_d_bmanager.html#a993c88970ffed5eff518ff2a10a0c87c", null ],
+    [ "deleteUser", "class_d_bmanager.html#ad039796a7a67fdd3ee6835c90299781a", null ],
+    [ "getAdmins", "class_d_bmanager.html#ad1768f8d141f2541bea62198331f1590", null ],
+    [ "getFavourites", "class_d_bmanager.html#ac70b87c728a277ef07df854787a7afc6", null ],
+    [ "getPhrase", "class_d_bmanager.html#a6f65a55f8e8f7056a2dc4e6baa13cb05", null ],
+    [ "getPhrases", "class_d_bmanager.html#ad493c3f0d513549e18d23847fa1cd039", null ],
+    [ "getPhraseWithTag", "class_d_bmanager.html#a14e638db3a697e8ab550e35a8570b3af", null ],
+    [ "getTags", "class_d_bmanager.html#a95689d44e1147003e07e1c727076e0a5", null ],
+    [ "getUsers", "class_d_bmanager.html#a00d9dc92db3681b38621db29b271fbed", null ],
+    [ "insertAdmin", "class_d_bmanager.html#a1e9a4cf35e82c6dab2b1d0e04734e845", null ],
+    [ "insertFavourite", "class_d_bmanager.html#aee4981f5c8dc6e0231e2bbe2e72138b0", null ],
+    [ "insertPhrase", "class_d_bmanager.html#a686816e4fe476808daee879f3adb6a1c", null ],
+    [ "insertTag", "class_d_bmanager.html#a8ebf9e50935dae88cd5bf284ceeb5345", null ],
+    [ "insertUser", "class_d_bmanager.html#adf66368d251ee31043db19ca732d4bd0", null ],
+    [ "loginUser", "class_d_bmanager.html#ab1eb2ec9bddb9b11baf8eb834dc523af", null ],
+    [ "updateUserPassword", "class_d_bmanager.html#a5d5d4a5ece61d2e6a107ef9d76c22ccf", null ]
+];
